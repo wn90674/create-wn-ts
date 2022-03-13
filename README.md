@@ -1,19 +1,9 @@
-# [name]
+# ts-starter
 
-[![NPM version](https://img.shields.io/npm/v/[name]?color=a1b858&label=)](https://www.npmjs.com/package/[name])
+Forked from [antfu/ts-starter](https://github.com/antfu/ts-starter)
 
-## Sponsors
+### 当前存在的bug
+在低版本mac(10.12)以及win10系统，使用`pnpm`安装依赖会报错[Cannot find package '@babel/types'](https://github.com/unjs/untyped/issues/29)
 
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
-
-```ts
-const a = 1
-```
-
-## License
-
-[MIT](./LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
+### todo change
+...

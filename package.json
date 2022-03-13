@@ -1,18 +1,18 @@
 {
-  "name": "name",
-  "version": "0.0.0",
+  "name": "ts-starter",
+  "version": "0.0.1",
   "packageManager": "pnpm@6.32.3",
-  "description": "",
+  "description": "fork a ts template from antfu",
   "keywords": [],
-  "homepage": "https://github.com/antfu/[name]#readme",
+  "homepage": "https://github.com/wn90674/ts-starter#readme",
   "bugs": {
-    "url": "https://github.com/antfu/[name]/issues"
+    "url": "https://github.com/wn90674/ts-stater/issues"
   },
   "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "使用`pnpm` <anthonyfu117@hotmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/[name].git"
+    "url": "git+https://github.com/wn90674/ts-starter.git"
   },
   "funding": "https://github.com/sponsors/antfu",
   "sideEffects": false,
