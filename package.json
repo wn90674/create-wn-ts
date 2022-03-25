@@ -1,6 +1,6 @@
 {
   "name": "create-tsts",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "packageManager": "pnpm@6.32.3",
   "description": "fork a ts template from antfu",
   "keywords": [],
