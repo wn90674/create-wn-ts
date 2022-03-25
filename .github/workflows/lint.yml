@@ -25,10 +25,10 @@ jobs:
           node-version: 16.x
           cache: pnpm
 
-      - name: Setup
-        run: npm i -g @antfu/ni
+      # - name: Setup
+      #   run: npm i -g @antfu/ni
 
-      - name: Install
+      # - name: Install
         run: nci
 
       - name: Lint
