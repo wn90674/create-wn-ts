@@ -1,6 +1,6 @@
 {
   "name": "create-tsts",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "packageManager": "pnpm@6.32.3",
   "description": "fork a ts template from antfu",
   "keywords": [],
@@ -28,7 +28,6 @@
     "build": "rimraf dist && unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
-    "prepublishOnly": "nr build",
     "release": "bumpp --commit --push --tag && pnpm publish --access public",
     "start": "esno src/index.ts",
     "test": "vitest"
