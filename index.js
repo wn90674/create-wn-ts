@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#!/usr/bin/env node
 const path = require('path')
 const fs = require('fs-extra')
 // const prompts = require('prompts')
@@ -10,6 +10,6 @@ if (fs.existsSync(projectDir)) {
   fs.mkdirSync(projectDir)
 }
 console.error(__dirname, projectDir)
-fs.copy(path.resolve(__dirname, '../template'), projectDir, () => {
+fs.copy(path.resolve(__dirname, './template'), projectDir, () => {
   console.error(__dirname, projectDir)
 })
