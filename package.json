@@ -1,6 +1,6 @@
 {
-  "name": "wn-ts-starter",
-  "version": "0.1.0",
+  "name": "@wn90674/ts-starter",
+  "version": "0.2.0",
   "packageManager": "pnpm@6.32.3",
   "description": "fork a ts template from antfu",
   "keywords": [],
