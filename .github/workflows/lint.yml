@@ -31,5 +31,5 @@ jobs:
       # - name: Install
         run: nci
 
-      - name: Lint
-        run: nr lint
+      # - name: Lint
+      #   run: nr lint
