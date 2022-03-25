@@ -1,6 +1,6 @@
 {
-  "name": "create-tsts",
-  "version": "0.3.9",
+  "name": "create-wn-ts",
+  "version": "0.4.0-beta.1",
   "packageManager": "pnpm@6.32.3",
   "description": "fork a ts template from antfu",
   "keywords": [],
@@ -18,14 +18,13 @@
   "sideEffects": false,
   "main": "index.js",
   "bin": {
-    "create-tsts": "index.js"
+    "create-wn-ts": "index.js"
   },
   "files": [
     "index.js",
     "template"
   ],
   "scripts": {
-    "build": "rimraf dist && unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "release": "bumpp --commit --push --tag && pnpm publish --access public",
