@@ -1,20 +1,19 @@
 {
-  "name": "@wn90674/ts-starter-demo",
+  "name": "ts-starter-demo",
   "version": "0.0.0",
   "packageManager": "pnpm@6.32.3",
-  "description": "fork a ts template from antfu",
+  "description": "fork a ts template from @antfu/ts-starter",
   "keywords": [],
-  "homepage": "https://github.com/wn90674/ts-starter#readme",
+  "homepage": "https://github.com/wn90674/[repo]#readme",
   "bugs": {
-    "url": "https://github.com/wn90674/ts-stater/issues"
+    "url": "https://github.com/wn90674/[repo]/issues"
   },
   "license": "MIT",
   "author": "wn90674",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wn90674/ts-starter.git"
+    "url": "git+https://github.com/wn90674/[repo].git"
   },
-  "funding": "https://github.com/sponsors/antfu",
   "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
