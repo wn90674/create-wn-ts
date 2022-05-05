@@ -3,6 +3,7 @@
 const path = require('path')
 const fs = require('fs-extra')
 const prompts = require('prompts')
+const pkg = require('./package.json')
 const {
   // yellow,
   // green,
@@ -14,7 +15,7 @@ const {
   reset
 } = require('kolorist')
 let targetDir = process.argv[2]
-const defaultProjectName = !targetDir ? 'ts-starter' : targetDir
+const defaultProjectName = !targetDir ? pkg.name : targetDir
 
 function isEmpty(path) {
   return fs.readdirSync(path).length === 0
@@ -105,8 +106,26 @@ async function init() {
     emptyDir(path.join(process.cwd(), targetDir))
   }
 
+ 
+  if(!res.projectName && (!process.argv[2])){
+    throw new Error(`${red('✖')} Operation cancelled`)
+  }
+
   fs.copy(path.resolve(__dirname, './template'), packageName, () => {
-    console.log(cyan(`project ${packageName} success created`))
+    // regenerate package.json
+    pkg.name = packageName
+    pkg.version = '0.0.0'
+    pkg.homepage = pkg.homepage.replace('create-wn-ts', '[repo]')
+    pkg.bugs.url = pkg.bugs.url.replace('create-wn-ts', '[repo]')
+    pkg.repository.url = pkg.repository.url.replace('create-wn-ts', '[repo]')
+    fs.writeFileSync(path.resolve(__dirname, './template/package.json'), JSON.stringify(pkg, null, 2))
+
+    console.log(cyan(`
+    project ${packageName} success created
+
+    cd ${packageName}
+    npm install
+    `))
   })
 }
 

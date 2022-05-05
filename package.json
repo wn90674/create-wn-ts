@@ -4,15 +4,15 @@
   "packageManager": "pnpm@6.32.3",
   "description": "fork a ts template from antfu",
   "keywords": [],
-  "homepage": "https://github.com/wn90674/ts-starter#readme",
+  "homepage": "https://github.com/wn90674/create-wn-ts#readme",
   "bugs": {
-    "url": "https://github.com/wn90674/ts-stater/issues"
+    "url": "https://github.com/wn90674/create-wn-ts/issues"
   },
   "license": "MIT",
   "author": "wn90674",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wn90674/ts-starter.git"
+    "url": "git+https://github.com/wn90674/create-wn-ts.git"
   },
   "funding": "https://github.com/sponsors/antfu",
   "sideEffects": false,
@@ -41,9 +41,9 @@
     "pnpm": "^6.32.3",
     "rimraf": "^3.0.2",
     "typescript": "^4.6.3",
-    "unbuild": "^0.7.0",
-    "vite": "^2.8.6",
-    "vitest": "^0.6.0"
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.8",
+    "vitest": "^0.6.3"
   },
   "dependencies": {
     "fs-extra": "^10.0.1",
