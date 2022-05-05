@@ -15,21 +15,26 @@
     "url": "git+https://github.com/wn90674/create-wn-ts.git"
   },
   "funding": "https://github.com/sponsors/antfu",
-  "sideEffects": false,
   "main": "index.js",
-  "bin": {
-    "create-wn-ts": "index.js"
-  },
   "files": [
     "index.js",
     "template"
   ],
+  "bin": {
+    "create-wn-ts": "index.js"
+  },
+  "sideEffects": false,
   "scripts": {
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "release": "bumpp --commit --push --tag && pnpm publish --access public",
     "start": "esno src/index.ts",
     "test": "vitest"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.1",
+    "kolorist": "^1.5.1",
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.18.5",
@@ -44,10 +49,5 @@
     "unbuild": "^0.7.4",
     "vite": "^2.9.8",
     "vitest": "^0.6.3"
-  },
-  "dependencies": {
-    "fs-extra": "^10.0.1",
-    "kolorist": "^1.5.1",
-    "prompts": "^2.4.2"
   }
 }

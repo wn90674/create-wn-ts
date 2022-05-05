@@ -3,7 +3,6 @@
 const path = require('path')
 const fs = require('fs-extra')
 const prompts = require('prompts')
-const pkg = require('./package.json')
 const {
   // yellow,
   // green,
@@ -14,6 +13,7 @@ const {
   red,
   reset
 } = require('kolorist')
+const pkg = require('./package.json')
 let targetDir = process.argv[2]
 const defaultProjectName = !targetDir ? pkg.name : targetDir
 
@@ -106,8 +106,7 @@ async function init() {
     emptyDir(path.join(process.cwd(), targetDir))
   }
 
- 
-  if(!res.projectName && (!process.argv[2])){
+  if (!res.projectName && (!process.argv[2])) {
     throw new Error(`${red('✖')} Operation cancelled`)
   }
 
